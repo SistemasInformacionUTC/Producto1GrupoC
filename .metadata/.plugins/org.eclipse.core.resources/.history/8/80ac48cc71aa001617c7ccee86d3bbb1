@@ -1,0 +1,30 @@
+package models;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.avaje.ebean.Model;
+import com.avaje.ebean.Model.Find;
+
+import play.data.validation.Constraints;
+
+@Entity
+public class Disco extends Model {
+	
+	
+private static final long serialVersionUID= 1L;
+@Id
+public Long codigo;
+
+@Constraints.Required
+public String name;
+
+@Constraints.Required
+public int capacidad;
+
+@Constraints.Required
+public int nucleos;
+
+public static Find<Long,Disco> find = new Find<Long,Disco>(){};
+	
+}
