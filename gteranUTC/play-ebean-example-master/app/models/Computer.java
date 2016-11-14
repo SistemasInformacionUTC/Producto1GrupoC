@@ -29,8 +29,11 @@ public class Computer extends Model {
     @Formats.DateTime(pattern="yyyy-MM-dd")
     public Date discontinued;
     
+    
+   
     @ManyToOne
     public Company company;
+    
     
     /**
      * Generic query helper for entity Computer with id Long
