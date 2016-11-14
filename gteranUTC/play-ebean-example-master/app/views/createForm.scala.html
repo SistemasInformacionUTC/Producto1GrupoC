@@ -21,11 +21,16 @@
                 '_label -> "Company", '_default -> "-- Choose a company --",
                 '_showConstraints -> false
             )
+            
+            @b3.text(computerForm("pulgada"), '_label -> "Monitor pulgada", '_help -> "")
+           @b3.text(computerForm("peso"), '_label -> "Monitor peso", '_help -> "")
+           
         </fieldset>
         
         <div class="actions">
             <input type="submit" value="Create this computer" class="btn primary"> or 
             <a href="@routes.HomeController.list()" class="btn">Cancel</a>
+        
         </div>
         
     }
